@@ -13,7 +13,3 @@ COPY assets/ assets
 RUN cp -a assets/fonts/alegreya-ht-pro-full-pack-ttf /usr/local/share/fonts
 RUN chmod 664 /usr/local/share/fonts/alegreya-ht-pro-full-pack-ttf/*
 RUN fc-cache -f -v
-
-
-#ADD Alias utils
-RUN alias compile='xelatex -file-line-error -interaction=nonstopmode main.tex'
